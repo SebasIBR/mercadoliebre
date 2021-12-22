@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    background-color:#EAC926;
+    font-size: 12px;
+    box-sizing: border-box;
+
+}
+main{
+    background-color: #ebebeb ;
+    text-align: center;
+    width: 100vw;
+    margin: auto;
+    box-sizing: border-box;
+}
+.titular{
+    font-size: 24px;
+    color: #666;
+    text-align: center;
+}
+.precios{
+    font-size: 18px;
+    padding-right: 6px;
+}
+.descuentos-descripciones{
+    font-size: 16px;
+    color: #39b54a;
+}
+.descripciones{
+    font-size: 16px;
+    display: none;
+}
+#navegacion ul{
+    margin: 0;
+    padding:0;
+}
+#navegacion ul a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+footer{
+    width: 95vw;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+footer i{
+    color:#1259c3 ;
+    margin-top: 10px;
+    font-size: 2em;
+}
+#cabeza{
+    padding: 10px;
+    display: flex;
+    align-self: center;
+
+}
+#compra{
+    text-align: center;
+    padding: 5px;
+    display: block;
+    font-size: 10px;
+}
+.fa-truck{
+    font-size: 20px;
+    padding-right: 20px;
+    color:#39b54a ;
+    align-items: flex-end;
+}
+.articulo{
+    border-top: solid 1px #ebebeb;
+    background-color: white;
+    margin: auto;
+}
+.articulo i{
+    display: flex;
+    flex-direction: column;
+}
+.textoDeArticulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    
+}
+.articulo-general div{
+    border: solid 15px #ebebeb;
+    display:block
+}
+#oculto-celu{
+    width: 97vw;
+    text-align: left;
+    display: block;
+    margin: auto;
+}
+#logo{
+    width: 100px;
+    height: auto;
+}
+.articulo-general div img{
+    width: 92vw;
+    margin: auto;
+}
+#banner{
+    width: 100vw;
+    max-width: 960vw;
+    margin: auto;
+    padding: 10px 0px;
+}
+#banner img{
+    width: 97vw;
+    height: auto;
+}
+#oculto-celu{
+    display: none;
+}
+#menuHamburguesa{
+    max-width: 40px;
+    color: white;
+    background-color: #03264C;
+    text-align: center;
+    margin: auto;
+    padding: 5px 5px;
+    border-radius: 10px;
+    display: block;
+    font-size: 18px;
+}
+
+/*Version tablet*/
+
+@media  (min-width: 361px){
+    * {
+        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+    }
+    #oculto-celu{
+        display: block;
+    }
+    #menuHamburguesa{
+        display: none;
+    }
+    #top-bar{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 50px;
+        margin: auto;
+    }
+    #compra{
+        max-width: 350px;
+        text-align: right;
+    }
+    #navegacion {
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+    #navegacion ul {
+        display: flex;
+        padding: 0px 50px;
+        margin: auto;
+    }
+    #navegacion li{
+        margin: 0px 5px;
+    }
+    .descripciones{
+        font-size: 16px;
+        display: block;
+    }
+    .titular{
+        text-align: left;
+    }
+    .articulo-general div{
+        margin: auto;
+    }
+    .articulo-general div img{
+        width: 30vw;
+        margin: auto;
+    }
+    .textoDeArticulo{
+        display: flex;
+        flex-direction: column;
+        margin:auto
+    }
+    .articulo-general .art {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* Version Desktop*/
+@media (min-width: 769px){
+    * {
+        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+    }
+    #menuHamburguesa{
+        display: none;
+    }
+    #top-bar, #navegacion{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    #navegacion ul{
+        display: flex;
+        justify-content: space-around;
+    }    
+    #navegacion li{
+        margin: 0 10px;
+        justify-content: space-around;
+    }
+    #navegacion a{
+        font-size: 19px;
+    }
+
+    #compra{
+        max-width: none;
+    }
+    footer section{
+        width: 95vw;
+        display: flex;
+    }
+    .recomendaciones{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .articulo-general div img{
+        width: 20vw;
+        margin: auto;
+    }
+}
